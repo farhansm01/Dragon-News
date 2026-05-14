@@ -1,19 +1,40 @@
+"use client";
+import { authClient } from "@/lib/auth-client";
 import { FaFacebookF, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc"; // colored Google icon
 
 const RightSidebar = () => {
+  const handleGoogleSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "google",
+    });
+    console.log(data, "data");
+  };
+  const handleGithubSignIn = async () => {
+    const data = await authClient.signIn.social({
+      provider: "github",
+    });
+    console.log(data, "data");
+  };
+
   return (
     <div className="space-y-6">
       {/* Login With */}
       <div>
         <h2 className="text-xl font-bold mb-3">Login With</h2>
         <div className="flex flex-col gap-2">
-          <button className="btn btn-outline w-full justify-start gap-2 border-gray-300 text-blue-600 hover:bg-blue-50 hover:border-blue-400 hover:text-blue-600">
+          <button
+            onClick={handleGoogleSignIn}
+            className="btn btn-outline w-full justify-start gap-2 border-gray-300 text-blue-600 hover:bg-blue-50 hover:border-blue-400 hover:text-blue-600"
+          >
             <FcGoogle className="text-lg" />
             Login with Google
           </button>
 
-          <button className="btn btn-outline w-full justify-start gap-2 border-gray-300 text-gray-800 hover:bg-gray-100 hover:border-gray-400 hover:text-gray-800">
+          <button
+            onClick={handleGithubSignIn}
+            className="btn btn-outline w-full justify-start gap-2 border-gray-300 text-gray-800 hover:bg-gray-100 hover:border-gray-400 hover:text-gray-800"
+          >
             <FaGithub className="text-lg" />
             Login with Github
           </button>
