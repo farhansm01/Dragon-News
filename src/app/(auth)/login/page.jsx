@@ -23,9 +23,15 @@ const LoginPage = () => {
       callbackURL: "/",
     });
 
-    if (res) {
-      alert("Loged In Successfully!!!");
+    if (error) {
+      alert(error.message);
     }
+
+    if (res) {
+      alert("Signed Up Successfully!!!");
+    }
+
+    console.log(res, error);
   };
 
   return (
