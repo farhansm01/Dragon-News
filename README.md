@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🐉 Dragon News
+
+A full-stack news portal delivering category-based news browsing with secure authentication. Built with Next.js and BetterAuth.
+
+🌐 **Live Site:** https://dragon-news-omega-lemon.vercel.app
+
+## 🎯 Project Purpose
+
+Dragon News is a category-driven news reading platform where users can browse articles by category, read full story details with ratings and view counts, and create secure accounts to personalize their experience.
+
+## 📸 Screenshots
+
+### Homepage
+*(add screenshot here — see note below)*
+
+## ✨ Key Features
+
+### 🔐 Authentication
+- Email & password registration and login
+- Secure session management with BetterAuth
+- Client-side form validation with React Hook Form
+
+### 📰 News Browsing
+- Category-based navigation with sidebar
+- Dynamic routing per category
+- Breaking news ticker
+- Custom loading states for smooth category transitions
+
+### 📄 News Details
+- Full article view with title, image, and details
+- Publish date, star rating, and total view count
+- Quick navigation back to category
+
+### ℹ️ Company Pages
+- About page — mission, core values, and team profiles
+- Careers page — open job listings with role, department, location, and perks
+
+## 🗂️ Pages
+
+**Public:** Home, Category, News Details, About, Careers, Login, Register
+
+## Tech Stack
+
+- [Next.js](https://nextjs.org/) (App Router)
+- [React](https://react.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Better Auth](https://www.better-auth.com/)
+- [React Hook Form](https://react-hook-form.com/)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- MongoDB Atlas account (used by BetterAuth)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Clone & Install
