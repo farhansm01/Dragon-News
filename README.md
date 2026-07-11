@@ -11,7 +11,7 @@ Dragon News is a category-driven news reading platform where users can browse ar
 ## 📸 Screenshots
 
 ### Homepage
-*(add screenshot here — see note below)*
+[![Homepage](https://github.com/farhansm01/Dragon-News/raw/main/public/homepage.png)](/farhansm01/Dragon-News/blob/main/public/homepage.png)
 
 ## ✨ Key Features
 
